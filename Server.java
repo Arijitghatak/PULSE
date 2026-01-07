@@ -15,10 +15,26 @@
            System.out.println("Waiting...");
            Socket=Server.accept();
 
+           br = new BufferedReader(new InputStreamReader(Socket.getInputStream()));
+
+           out = new PrintWriter(Socket.getOutputStream());
+
+           startReading ();
+           startWriting();
+
        } catch (Exception e) {
         e.printStackTrace();
        } 
     }
+
+public void startReading(){
+
+}
+public void startWriting(){
+    
+}
+
+
     public static void main(String[] args) {
         System.out.println("Server is running...");
         new Server();
