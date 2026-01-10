@@ -1,3 +1,5 @@
+ package Client;
+ 
  import java.io.*;
  import java.net.*;
  
@@ -84,10 +86,6 @@ public void startReading(){
     };
         new Thread(r2).start();
     }
+ }
 
-
-    public static void main(String[] args) {
-        System.out.println("(client server is running)");
-        new Client();
-    }
-}
+    
