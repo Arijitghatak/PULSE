@@ -57,6 +57,12 @@ This keeps the focus on **how networking actually works** instead of hiding it b
 Arijit Ghatak
 CS Student — building real systems to understand how they actually work 💻
 
+## 📸 Screenshots
+
+![Pulse Chat](screenshots/PULSE.png)
+![Disconnected State](screenshots/SERVER.png)
+
+
 
 ## ▶️ How to Run
 
