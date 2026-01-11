@@ -1,4 +1,4 @@
-# chatapp
+# pulse 
 💬 Java Chat Application (Socket Programming)
 
 📌 Description
@@ -12,7 +12,7 @@ This project demonstrates real-time communication, multithreading, and core netw
 🌐 TCP Sockets
 🧵 Multithreading
 🖥️ Java Swing
-
+hey
 
 ▶️ How to Run
 
