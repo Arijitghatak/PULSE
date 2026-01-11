@@ -1,9 +1,12 @@
 package Client;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
-        Client Client = new Client();
-        ChatGUI gui = new ChatGUI(client);
+        
+        Gui gui = new Gui();
+        Client client = new Client(gui);
+        
+        gui.setClient(client);
         gui.start();
     
 }

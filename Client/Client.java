@@ -9,8 +9,12 @@
     BufferedReader br;
     PrintWriter out;
 
+    private Gui gui;
 
-public Client (){
+public Client (Gui gui){
+
+this.gui = gui;
+
     try {
         System.out.println("sending Request to server ");
         socket = new Socket("127.0.0.1",7777);
@@ -18,10 +22,10 @@ public Client (){
 
         br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-           out = new PrintWriter(socket.getOutputStream());
+           out = new PrintWriter(socket.getOutputStream(),true);
 
            startReading ();
-           startWriting();
+          // startWriting();
 
 
     } catch (Exception e) {
@@ -44,6 +48,8 @@ public void startReading(){
                 break;
             }
             System.out.println("Server : " + msg);
+
+            gui.addMessage("Server: " + msg);
         
         }
 
@@ -57,7 +63,7 @@ public void startReading(){
     }
 
 
-    public void startWriting(){
+   /*  public void startWriting(){
     System.out.println("writer started ...");
     Runnable r2 = ()->{
 
@@ -86,6 +92,21 @@ public void startReading(){
     };
         new Thread(r2).start();
     }
- }
+        */
+   
 
-    
+ public void sendMessage(String msg){
+    if (socket != null && !socket.isClosed()){
+        out.println(msg);
+
+        if (msg.equals("exit")){
+            try {
+                socket.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+ 
+}
