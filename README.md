@@ -52,6 +52,12 @@ This keeps the focus on **how networking actually works** instead of hiding it b
 
 ---
 
+👤 Author
+
+Arijit Ghatak
+CS Student — building real systems to understand how they actually work 💻
+
+
 ## ▶️ How to Run
 
 Start the server:
@@ -62,7 +68,3 @@ java Server.Server
 javac Client/*.java
 java Client.Main
 
-👤 Author
-
-Arijit Ghatak
-CS Student — building real systems to understand how they actually work 💻
