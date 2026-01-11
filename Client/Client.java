@@ -17,7 +17,7 @@ this.gui = gui;
 
     try {
         System.out.println("sending Request to server ");
-        socket = new Socket("127.0.0.1",7777);
+        socket = new Socket("127.0.0.1",7778);
         System.out.println("Connection done");
 
         br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -42,7 +42,8 @@ public void startReading(){
 
         while ( true) { 
             String msg = br.readLine();
-            if (msg.equals("exit")){
+            if (msg == null || msg.equals("exit")){
+                 gui.onDisconnected();
                 System.out.println("Server has terminated the chat");
                 socket.close();
                 break;

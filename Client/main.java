@@ -5,7 +5,6 @@ public class Main {
         
         Gui gui = new Gui();
         Client client = new Client(gui);
-        
         gui.setClient(client);
         gui.start();
     

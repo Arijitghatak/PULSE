@@ -141,4 +141,12 @@ private void createUI(){
         ChatArea.append(msg + "\n");
     }
 
+    public void onDisconnected() {
+    inputField.setEnabled(false);
+    sendButton.setEnabled(false);
+    addMessage("Connection closed.");
+}
+
+
+
 }

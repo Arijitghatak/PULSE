@@ -11,7 +11,7 @@
     //constructor 
     public Server (){
        try {
-           Server = new ServerSocket(7777);
+           Server = new ServerSocket(7778);
            System.out.println("Server is ready to accept connection...");
            System.out.println("Waiting...");
            Socket=Server.accept();
