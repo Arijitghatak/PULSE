@@ -6,6 +6,10 @@ It allows two processes to communicate in real time over a TCP connection.
 This project focuses on **core networking and system design**, not frameworks.
 
 ---
+### ▶️ Download Runnable JAR
+[Download PULSE.jar](https://github.com/Arijitghatak/PULSE/releases/download/v1.0.0/PULSE.jar)
+
+---
 
 ## ✨ What Pulse Does
 
